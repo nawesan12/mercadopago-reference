@@ -16,15 +16,15 @@ export default function handler(req: Request, res: Response) {
         title: `${turno.service} - Nombre de la marca`,
         description: `Descripcion del producto`,
         picture_url: "url de imagen",
-        quantity: 1,
+        quantity: 1 as number,
         currency_id: "currency needed (ARS, USD, etc)",
-        unit_price: turno.price
+        unit_price: turno.price as number
       }
     ],
     payer: {
-      name: user.name,
-      surname: user.name.split(" ")[1] ?? "TGB",
-      email: user.email
+      name: user.name as string,
+      surname: user.name.split(" ")[1] ?? "TGB" as string,
+      email: user.email as string
     } as PreferencePayer,
     back_urls: {
       success: "https://success.com",
