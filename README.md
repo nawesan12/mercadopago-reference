@@ -20,5 +20,6 @@ Then in the front, the idea is to receive that ID once the page is loaded, that 
 
 ## Requirements
 
-* Backend in Node
 * Frontend in HTML, CSS and Javascript, or any other framework you want to use
+* Backend in Node
+
